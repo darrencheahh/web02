@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div align="center">
+        <h1 style="font-size: 60px;"> FIND AN EVENT </h1>
+        <h1 style="font-size: 40px;"> THAT MAKES YOU <em>FULL</em> </h1>
+        <br/>
+        <a href="{{url_for('views.browse_Events')}}"
+                class="btn btn-primary browse-event-button"
+                style="font-family: Avenir; padding: 15px 30px;"
+        ><strong>BROWSE EVENTS</strong>
+        </a>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+`   <br/>
+    <br/>
+{% endblock %}

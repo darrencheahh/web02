@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}Create Events{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <br/>
+    <div
+        align="left"
+        class="container">
+        <h1> Create Events </h1>
+        <p> We are so excited for your new event! Create and sell tickets for your events on <em>eventfull</em>.<br/>
+            Fill in the form below to successfully <em>create</em> your events.
+        </p>
+    </div>
+     <div class="container">
+        <div class="form-group row justify-content-center">
+            <div align="left">
+                <label for="eventName" style="font-size: 20px"><strong>Event Name</strong></label>
+                <input
+                    type="text"
+                    id="eventName"
+                    name="eventName"
+                    class="form-control"
+                    placeholder="Enter Name"
+                    style="width:450px; font-size: 18px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+             <div align="left">
+                <label for="location" style="font-size: 20px"><strong>Location</strong></label>
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    class="form-control"
+                    placeholder="Enter a Location"
+                    style="width:450px; font-size: 18px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+             <div align="left">
+                <label for="category" style="font-size: 20px"><strong>Category</strong></label>
+                <select
+                    id="category"
+                    name="category"
+                    class="form-control"
+                    aria-label="Default select example"
+                    style="width:450px; font-size: 18px"
+                    >
+                    <option selected>Categories</option>
+                    <option value="Clubs">Clubs</option>
+                    <option value="Concerts">Concerts</option>
+                    <option value="Festivals">Festivals</option>
+                    <option value="Conferences">Conferences</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+             <div align="left">
+                <label for="eventDate" style="font-size: 20px"><strong>Date</strong></label>
+                <input
+                    type="datetime-local"
+                    id="eventDate"
+                    name="eventDate"
+                    class="form-control"
+                    placeholder="Enter Date"
+                    style="width:450px; font-size: 18px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+             <div align="left">
+                <label for="eventPrice" style="font-size: 20px"><strong>Price</strong></label>
+                <input
+                    type="number"
+                    id="eventPrice"
+                    name="eventPrice"
+                    class="form-control"
+                    placeholder="Enter Price"
+                    style="width:450px; font-size: 18px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+             <div align="left">
+                <label for="ticketsNo" style="font-size: 20px"><strong>Number of Tickets Available</strong></label>
+                <input
+                    type="number"
+                    id="ticketsNo"
+                    name="ticketsNo"
+                    class="form-control"
+                    placeholder="Enter Amount"
+                    style="width:450px; font-size: 18px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div align="left">
+                <button
+                    class="btn btn-primary create-event-button"
+                    type="submit"
+                    style="font-family: Avenir; width: 150px"
+                ><strong>CREATE EVENT</strong>
+                </button>
+        </div>
+        <br/>
+     </div>
+</form>
+{% endblock %}

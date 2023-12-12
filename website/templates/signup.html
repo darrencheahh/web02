@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %} Sign Up for EventFull {% endblock %}
+
+{% block content %}
+<form method="POST">
+    <br/>
+    <div style="width: 500px; padding: 20px; border: 2px solid #ccc; border-radius: 10px;">
+    <h1 align="center"
+        style="font-size: 35px">
+        Sign Up for <em>eventFull</em>
+    </h1>
+    <br/>
+    <div class="form-group">
+        <div class="form-group row justify-content-center">
+            <div class="col-sm-12">
+                <label for="email" style="font-size: 25px"><strong>Email Address</strong></label>
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    style="width:450px; font-size: 22px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+            <div class="col-sm-12">
+                <label for="username" style="font-size: 25px"><strong>Username</strong></label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="form-control"
+                    placeholder="Enter Username"
+                    style="width:450px; font-size: 22px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+            <div class="col-sm-12">
+                <label for="password1" style="font-size: 25px"><strong>Password</strong></label>
+                <input
+                    type="password"
+                    id="password1"
+                    name="password1"
+                    class="form-control"
+                    placeholder="Enter Password"
+                    style="width:450px; font-size: 22px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div class="form-group row justify-content-center">
+            <div class="col-sm-12">
+                <label for="password2" style="font-size: 25px"><strong>Re-enter your Password</strong></label>
+                <input
+                    type="password"
+                    id="password2"
+                    name="password2"
+                    class="form-control"
+                    placeholder="Enter Password Again"
+                    style="width:450px; font-size: 22px"
+                />
+            </div>
+        </div>
+        <br/>
+        <div align="center">
+            <button
+                class="btn btn-primary"
+                type="submit"
+                style="font-family: Avenir; background-color: #191970; border-color: #191970; width: 150px"
+            ><strong>SIGN UP</strong>
+            </button>
+        </div>
+    </div>
+    </div>
+    <br/>
+    <br/>
+</form>
+{% endblock %}

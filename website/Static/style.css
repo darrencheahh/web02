@@ -1,0 +1,21 @@
+
+h1 {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.create-event-button {
+    background-color: #191970;
+    border-color: #191970;
+    color: #fff; /* Set text color to white, adjust as needed */
+}
+
+.browse-event-button {
+    background-color: #191970;
+    border-color: #191970;
+    color: #fff; /* Set text color to white, adjust as needed */
+}
+
+
+
+
