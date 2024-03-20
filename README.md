@@ -1,4 +1,4 @@
-#eventFull website
+# eventFull website
 
 This web interface is created as a ticketing event marketplace for buyers and sellers to interact. 
 
@@ -10,4 +10,5 @@ There are a lot of functionalities that I made for this ticketing marketplace.
 - Listing tickets function
 - Liking events
 - Delete event listed
+
 
