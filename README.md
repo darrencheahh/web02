@@ -1,4 +1,4 @@
-##eventFull website
+#eventFull website
 
 This web interface is created as a ticketing event marketplace for buyers and sellers to interact. 
 
